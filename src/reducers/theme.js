@@ -11,7 +11,7 @@ const initialState = {				//默认样式
 const theme = (state = initialState, action) => {
 	switch (action.type) {
 		case Change_Theme:
-			return { ...state , action.themeObj };
+			return state;
 		default:
 	      	return state
 	}

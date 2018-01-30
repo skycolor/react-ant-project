@@ -1,5 +1,6 @@
 import { User_List , User_Add , User_Del } from '../constants/actionTypes'
 
+console.log(User_List , User_Add , User_Del);
 
 const tableData = (state = [], action) => {
 	switch (action.type) {

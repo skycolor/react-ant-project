@@ -3,10 +3,9 @@ import folding from './folding'
 import theme from './theme'
 import user from './user'
 
-const reducerIndex = combineReducers({
+
+export default combineReducers({
   folding,
   theme,
   user
 });
-
-export default reducerIndex;
