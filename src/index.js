@@ -12,6 +12,9 @@ import thunk from 'redux-thunk';
 //引入reducer相关
 import reducer from './reducers'
 
+//引入UI库样式
+import 'antd/dist/antd.min.css'
+
 //redux 相关代码
 const middleware = [ thunk ];
 middleware.push(createLogger())
@@ -20,8 +23,7 @@ const store = createStore(reducer,
   applyMiddleware(...middleware)
 )
 
-
-//开始渲染
+//加入redux，开始渲染
 ReactDOM.render(<Provider store={ store } >
      <App />
    </Provider>
