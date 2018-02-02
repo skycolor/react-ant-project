@@ -6,7 +6,7 @@ import {connect} from 'react-redux'
 import Home from '../home/home'
 
 //引入lib包
-import particle from '../../lib/particle';
+import rainEffect from '../../lib/meteorRain';
 
 //加入ant 控件
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
@@ -21,7 +21,7 @@ class App extends React.Component {
 		router: PropTypes.object
 	}
   componentDidMount(){
-    particle.particleEffect.apply();
+    rainEffect.meteorRain.apply();
   }
   handleCommit = (e) => {
     e.preventDefault();
