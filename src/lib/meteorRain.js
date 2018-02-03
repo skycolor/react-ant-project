@@ -15,7 +15,7 @@ function meteorRain() {
 	var cursor, canvas, context;
 	//粒子对象存储的数组
 	var particles = [],
-		particleNum = 250;
+		particleNum = 320;
 	//鼠标的位置
 	var mouseX = 0,
 		mouseY = 0;
