@@ -34,7 +34,7 @@ class App extends React.Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-        <div className='container' >
+        <div className='login-container' >
             <div className='content' >
                 <p className="title">react全家桶管理系统</p>
                 <Form onSubmit={this.handleCommit}  className="login-form">

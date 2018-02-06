@@ -1,0 +1,14 @@
+@import '../mixin';
+
+.container-main{
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  @include flex
+
+  .container-content{
+     width: 100%;
+  }
+}

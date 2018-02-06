@@ -33,6 +33,22 @@ $b: #000;
     height: $h;
 }
 
+//横向flex布局
+@mixin flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	box-sizing: border-box;
+	min-width: 0;
+}
+
 
 //绝对定位 居中
 @mixin setPosCenter {
