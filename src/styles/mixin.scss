@@ -20,10 +20,18 @@ $b: #000;
     border-radius: $radius;
 }
 
+//css渐变动画
+@mixin transition($attr) {
+	transition: $attr .3s ease;
+	-moz-transition: $attr .3s ease;
+	-webkit-transition: $attr .3s ease;
+	-o-transition: $attr .3s ease;
+}
+
 //文字居中
 @mixin setTextMiddle($height) {
     height: $height;
-	line-height: $height;
+		line-height: $height;
 }
 
 //绝对定位

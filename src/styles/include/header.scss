@@ -2,7 +2,49 @@
 
 header{
   width: 100%;
-  padding: 0 20px;
+  padding: 0 25px;
   color: $w;
+  font-size: 18px;
+  @include transition(background)
   @include setTextMiddle(60px)
+
+  //菜单折叠控制栏
+  .fold-control{
+      cursor: pointer;
+      margin-right: 25px;
+  }
+
+  //标题
+  .title{
+    font-size: 20px;
+  }
+
+  //主题控制
+  .theme-control{
+    float: right;
+    font-size: 14px;
+
+    a{
+      color: $w;
+    }
+  }
+
+  //用户栏目
+  .user-logo{
+    float: right;
+    font-size: 14px;
+    margin-right: 40px;
+
+    img{
+      display: inline-block;
+      width: 45px;
+      margin-right: 15px;
+      @include borderRadius(50%);
+    }
+
+    a{
+      color: $w;
+    }
+  }
+
 }

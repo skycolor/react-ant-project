@@ -9,9 +9,9 @@ const foldingMenu = isFolding => ({
 
 
 //主题切换
-const changeTheme = themeObj => ({
+const changeTheme = themeKey => ({
 	type : types.Change_Theme ,
-	themeObj
+	themeKey
 });
 
 
@@ -38,4 +38,4 @@ const delUser = userObj => ({
   userObj
 })
 
-export default {foldingMenu , changeTheme , getAllUsers , addUser , delUser}
+export {foldingMenu , changeTheme , getAllUsers , addUser , delUser}
