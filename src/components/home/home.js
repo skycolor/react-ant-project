@@ -1,17 +1,18 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import {
-  BrowserRouter as Router , Route
-} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 
 //引入主体页面
 import Header from '../include/header'
-import Menu from '../include/menu'
+import MenuContent from '../include/menu'
 //引入router相关页面
 import Base from '../base/base'
 import Ele from '../ant/ele'
 import Form from '../ant/form'
 import Table from '../ant/table'
+import Editor from '../tool/editor'
+import Upload from '../tool/upload'
+import Chart from '../chart/chart'
 
 class Home extends React.Component {
   constructor(props) {
@@ -22,15 +23,19 @@ class Home extends React.Component {
       <section className="container" >
           <Header />
           <section className="container-main" >
-              <Menu />
-              <Router >
+              <MenuContent />
+              <Route >
                 <div className="container-content" >
-                  <Route exact path='/main/' component={Base} />
+                  <Route exact path='/main' component={Base} />
+                  <Route path="/main/base" component={Base} />
                   <Route path="/main/ele" component={Ele} />
                   <Route path="/main/form" component={Form} />
                   <Route path="/main/table" component={Table} />
+                  <Route path="/main/editor" component={Editor} />
+                  <Route path="/main/upload" component={Upload} />
+                  <Route path="/main/chart" component={Chart} />
                 </div>
-              </Router >
+              </Route >
           </section>
       </section>
     )

@@ -2,6 +2,7 @@
 *	主题颜色，此功能，暂时滞后
 */
 const theme1 = {		//默认
+	key : 'theme1' ,
 	menuBg : '#324157' ,
 	menuTextColor : '#bfcbd9' ,
 	menuActiveTextColor : '#20a0ff' ,
@@ -10,6 +11,7 @@ const theme1 = {		//默认
 
 
 const theme2 = {		//绿色
+	key : 'theme2' ,
 	menuBg : '#eef6f6' ,
 	menuTextColor : '#496a6a' ,
 	menuActiveTextColor : '#22d0d2' ,
@@ -17,6 +19,7 @@ const theme2 = {		//绿色
 };
 
 const theme3 = {		//蓝色
+	key : 'theme3' ,
 	menuBg : '#e8f8ff' ,
 	menuTextColor : '#496a6a' ,
 	menuActiveTextColor : '#409EFF' ,
@@ -24,6 +27,7 @@ const theme3 = {		//蓝色
 };
 
 const theme4 = {		//紫色
+	key : 'theme4' ,
 	menuBg : '#f5ebf9' ,
 	menuTextColor : '#496a6a' ,
 	menuActiveTextColor : '#c451f2' ,
@@ -31,6 +35,7 @@ const theme4 = {		//紫色
 };
 
 const theme5 = {		//黄色
+	key : 'theme5' ,
 	menuBg : '#f8f8e5' ,
 	menuTextColor : '#496a6a' ,
 	menuActiveTextColor : '#edea01' ,

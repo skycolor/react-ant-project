@@ -3,6 +3,7 @@ import themeObj from '../lib/theme'
 
 
 const initialState = {				//默认样式
+  key : 'theme1' ,
   menuBg : '#324157' ,
 	menuTextColor : '#bfcbd9' ,
 	menuActiveTextColor : '#20a0ff' ,
