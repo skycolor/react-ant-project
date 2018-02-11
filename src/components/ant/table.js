@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux'
 
+import Bread from '../include/bread'
+
 class Table extends React.Component {
   constructor(props) {
     super(props);
@@ -8,7 +10,7 @@ class Table extends React.Component {
   render() {
     return (
       <div>
-          table
+          <Bread desArr={["ant" , "表格"]} iconType="file-text" />
       </div>
     )
   }

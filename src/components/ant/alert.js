@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux'
 
+import Bread from '../include/bread'
+
 class Alert extends React.Component {
   constructor(props) {
     super(props);
@@ -8,7 +10,7 @@ class Alert extends React.Component {
   render() {
     return (
       <div>
-          alert
+          <Bread desArr={["ant" , "弹出框"]} iconType="file-text" />
       </div>
     )
   }

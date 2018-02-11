@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux'
 
+import Bread from '../include/bread'
+
 class Editor extends React.Component {
   constructor(props) {
     super(props);
@@ -8,7 +10,7 @@ class Editor extends React.Component {
   render() {
     return (
       <div>
-          editor
+          <Bread desArr={["工具" , "编辑器"]} iconType="tool" />
       </div>
     )
   }

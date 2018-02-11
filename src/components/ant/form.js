@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux'
 
+import Bread from '../include/bread'
+
 class Form extends React.Component {
   constructor(props) {
     super(props);
@@ -8,7 +10,7 @@ class Form extends React.Component {
   render() {
     return (
       <div>
-          form
+          <Bread desArr={["ant" , "表单"]} iconType="file-text" />
       </div>
     )
   }

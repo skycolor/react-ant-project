@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux'
 
+import Bread from '../include/bread'
+
 class Chart extends React.Component {
   constructor(props) {
     super(props);
@@ -8,7 +10,7 @@ class Chart extends React.Component {
   render() {
     return (
       <div>
-          chart
+          <Bread desArr={["图表"]} iconType="star-o" />
       </div>
     )
   }

@@ -47,6 +47,9 @@ class MenuContent extends React.Component {
           <Menu.Item key="table">
               表格
           </Menu.Item>
+          <Menu.Item key="alert">
+              弹出框
+          </Menu.Item>
         </SubMenu>
         <SubMenu key="sub2" title={<span><Icon type="tool" /><span>工具</span></span>}>
           <Menu.Item key="editor">
