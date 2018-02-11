@@ -12,7 +12,7 @@ import rainEffect from '../../lib/meteorRain';
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 const FormItem = Form.Item;
 
-class App extends React.Component {
+class Login extends React.Component {
   constructor(props) {
     super(props);
     this.handleCommit = this.handleCommit.bind(this);
@@ -67,7 +67,7 @@ class App extends React.Component {
 //导入样式
 require('../../styles/login/login.scss')
 
-App.defaultProps = {};
+Login.defaultProps = {};
 
 //导出redux以及antd的混合
-export default connect()( Form.create()(App) );
+export default connect()( Form.create()(Login) );

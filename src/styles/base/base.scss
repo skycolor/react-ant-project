@@ -1,0 +1,18 @@
+.base-container{
+    .title{
+        font-size: 20px;
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 12px;
+    }
+
+    .ant-collapse-content a{
+        color: inherit;
+
+        &:hover{
+            color: #40a9ff;
+            text-decoration: underline;
+        }
+    }
+
+}
