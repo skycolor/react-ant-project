@@ -1,34 +1,27 @@
 import React from 'react';
-import {connect} from 'react-redux'
-import {
-  BrowserRouter as Router , Route
-} from 'react-router-dom'
+import Main from './Main';
 
-//引入router相关页面
-import Home from './home/home'
-import Login from './login/login'
+//引入redux 相关包
+import { createStore ,applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import { createLogger } from 'redux-logger';
+import thunk from 'redux-thunk';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <Router >
-        <div className="app-container" >
-          <Route exact path='/' component={Login} />
-          <Route path="/login" component={Login} />
-          <Route path="/main" component={Home} />
-        </div>
-      </Router >
-    );
-  }
-}
+//引入reducer相关
+import reducer from '../reducers'
 
-//导入样式
-require('../styles/app.scss')
+//redux 相关代码
+const middleware = [ thunk ];
+middleware.push(createLogger())
+const store = createStore(reducer,
+  applyMiddleware(...middleware)
+)
 
-App.defaultProps = {};
+const AppPage = () => (
+  <Provider store={ store } >
+      <Main />
+  </Provider>
+)
 
 //导出redux以及antd的混合
-export default connect()( App );
+export default AppPage;
