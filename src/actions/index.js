@@ -33,9 +33,9 @@ const addUser = userObj => ({
 })
 
 
-const delUser = userObj => ({
+const delUser = key => ({
   type: types.User_Del,
-  userObj
+  key
 })
 
 export {foldingMenu , changeTheme , getAllUsers , addUser , delUser}

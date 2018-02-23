@@ -47,6 +47,9 @@ class MenuContent extends React.Component {
           <Menu.Item key="table">
               表格
           </Menu.Item>
+          <Menu.Item key="tableDyn">
+              动态表格
+          </Menu.Item>
           <Menu.Item key="alert">
               弹出框
           </Menu.Item>

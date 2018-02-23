@@ -10,9 +10,9 @@ const tableData = (state = [], action) => {
 			return [...state , action.userObj];
 		//删除对象
 		case User_Del:
-			return state;
+			return state.filter(item => item.key !== action.key);
 		default:
-	      	return state
+	    return state
 	}
 }
 

@@ -10,6 +10,7 @@ import Base from '../base/base'
 import Ele from '../ant/ele'
 import Form from '../ant/form'
 import Table from '../ant/table'
+import TableDyn from '../ant/tableDyn'
 import Alert from '../ant/alert'
 import Editor from '../tool/editor'
 import Upload from '../tool/upload'
@@ -32,6 +33,7 @@ class Home extends React.Component {
                   <Route path="/main/ele" component={Ele} />
                   <Route path="/main/form" component={Form} />
                   <Route path="/main/table" component={Table} />
+                  <Route path="/main/tableDyn" component={TableDyn} />
                   <Route path="/main/alert" component={Alert} />
                   <Route path="/main/editor" component={Editor} />
                   <Route path="/main/upload" component={Upload} />
